@@ -1,24 +1,9 @@
-# README
+# REDDIT-API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample reddit-api with redux
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails, Webpacker, Yarn
+* Redux
+* Ruby 2.3.3
+* Rails 5.1.rc2
+* Start server with ./bin/server
