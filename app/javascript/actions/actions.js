@@ -44,7 +44,7 @@ function fetchPosts(subreddit) {
   // Thunk middleware knows how to handle functions.
   // It passes the dispatch method as an argument to the function,
   // thus making it able to dispatch actions itself.
-  return function (dispatch) {
+  return (dispatch) => {
     // First dispatch: the app state is updated to inform
     // that the API call is starting.
     dispatch(requestPosts(subreddit))
@@ -88,9 +88,6 @@ export function fetchPostsIfNeeded(subreddit) {
     if (shouldFetchPosts(getState(), subreddit)) {
       // Dispatch a thunk from thunk!
       return dispatch(fetchPosts(subreddit))
-    } else {
-      // Let the calling code know there's nothing to wait for.
-      return Promise.resolve()
     }
   }
 }
